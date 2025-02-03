@@ -1,0 +1,33 @@
+.chat-interface-main-container {
+  height: 100%;
+  width: 100%;
+
+  .header-container {
+    position: relative;
+    padding: 0px 2rem;
+  }
+
+  .aside-side-menu-container {
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .side-menu-header-container {
+      background-color: #6581b9;
+      padding: 0px 1rem;
+    }
+
+    .logo-container {
+      width: 64px;
+      height: 64px;
+
+      .logo-image {
+        height: 100%;
+        width: 100%;
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+}

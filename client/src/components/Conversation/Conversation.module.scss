@@ -1,0 +1,60 @@
+.Conversation-main-container{
+    height: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 100%;
+    position: relative;
+     &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 35px;
+      background: linear-gradient(rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .Conversation-box{
+        width: 100%;
+
+        .chats{
+            flex: auto;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            padding: 1rem 2rem;
+            display: flex;
+
+            .message-sent{
+                background-color: #6581B9;
+                color: #e9e9e9;
+            }
+        }
+    }
+
+    .footer{
+        width: 100%;
+        position: sticky;
+        // bottom: 1rem;
+        // padding: 1rem 3rem;
+
+        .ant-card {
+            border-radius: 0px;
+        }
+
+        .ant-card-body{
+            padding: 0px;
+        }
+
+        .input-box{
+            width: 100%;
+            padding: 4px;
+            border-radius: 0px;
+
+            .ant-input {
+                height: 100%;
+            }
+        }
+    }
+}
